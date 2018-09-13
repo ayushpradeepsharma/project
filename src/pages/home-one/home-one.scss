@@ -1,0 +1,26 @@
+page-home-one {
+
+
+    .back-button.show-back-button
+    {
+        display: none;
+    }
+
+    .pic
+    {
+        width: 25em;
+        height: 10em;
+    }
+
+    .today
+    {
+        width:2000px;
+        height: 100%;
+        ion-card
+        {
+            display: table-cell;
+            border: solid 1px #cccccc;
+            margin-right: 1em;
+        }
+    }
+}

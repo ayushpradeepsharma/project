@@ -1,0 +1,42 @@
+page-home {
+
+    .btnOne
+    {
+        display: block;
+        margin: auto;
+        // margin-top: 2em;
+        width: 12em;
+    }
+    .btnTwo
+    {
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 12em;
+    }
+
+    .circleImage {
+        height: 13em;
+        width: 65%;
+        border-radius: 50%;
+        display:block;
+        margin: auto;
+        margin-top: 1em;
+     }
+
+     .btnThree
+     {
+         
+        display: block;
+        margin: auto;
+        margin-top: 1em;
+        width: 12em;
+     }
+
+     .login-Box
+     {
+         margin-top:2em;
+         border: black 1px solid;
+     }
+}

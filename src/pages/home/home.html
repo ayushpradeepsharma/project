@@ -1,0 +1,25 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+
+  <ion-avatar>
+    <img class="circleImage" src="../../assets/imgs/logo.png">
+  </ion-avatar>
+
+  <div class="login-Box">
+    <h6 text-center>LOGIN</h6>
+    <button class="btnOne" ion-button color="primary" (click)="clickOnFacebook()">Login with Facebook</button>
+    <button class="btnTwo" ion-button color="danger" (click)="clickOnGoogle()">Login with Google</button>
+  </div>
+
+  <button ion-button class="btnThree" (click)="clickOnRegister()">REGISTER</button>
+
+
+</ion-content>
