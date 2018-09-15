@@ -22,7 +22,7 @@
 
   <form [formGroup]="profileForm">
 
-    <ion-item>
+    <!-- <ion-item>
       <ion-label stacked>Name</ion-label>
       <ion-input type="text" [(ngModel)]="user.name" formControlName="name"></ion-input>
     </ion-item>
@@ -40,7 +40,13 @@
     <ion-item>
       <ion-label stacked>Phone Number</ion-label>
       <ion-input type="tel" [(ngModel)]="user.phoneNumber" formControlName="phoneNumber"></ion-input>
-    </ion-item>
+    </ion-item> -->
+    <ion-list>
+      <button ion-item>Name</button>
+      <button ion-item>Email</button>
+      <button ion-item>Address</button>
+      <button ion-item>Phone Number</button>
+    </ion-list>
 
   </form>
 

@@ -17,6 +17,7 @@ import { ContactUsPage } from '../pages/contact-us/contact-us';
 import { MyProfilePage } from '../pages/my-profile/my-profile';
 import { CartPage } from '../pages/cart/cart';
 import { AddressPage } from '../pages/address/address';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,6 +40,7 @@ import { GlobalsProvider } from '../providers/globals/globals';
     MyProfilePage,
     CartPage,
     AddressPage,
+    EditProfilePage,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +63,7 @@ import { GlobalsProvider } from '../providers/globals/globals';
     MyProfilePage,
     CartPage,
     AddressPage,
+    EditProfilePage,
   ],
   providers: [
     StatusBar,

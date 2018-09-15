@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,MenuController } from 'ionic-angular';
 
+import { GlobalsProvider } from '../../providers/globals/globals';
+
 /**
  * Generated class for the MyOrderPage page.
  *
@@ -15,7 +17,8 @@ import { IonicPage, NavController, NavParams,MenuController } from 'ionic-angula
 })
 export class MyOrderPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,
+  public globals:GlobalsProvider) {
   }
 
   ionViewDidLoad() {

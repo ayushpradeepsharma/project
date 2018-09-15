@@ -13,11 +13,31 @@
           </button>
       </ion-buttons>
     <ion-title></ion-title>
+    <ion-buttons end>
+      <button  ion-button style="float:right;" clear (click)="clickOnCart()">
+          <ion-icon name="cart"></ion-icon>
+      </button>
+      <span style="position:absolute;float:right; bottom: 1.7em;"><ion-badge>{{globals.cartCount}}</ion-badge></span>
+  </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-4 style="border: black 1px solid;">
+                Date
+            </ion-col>
+            <ion-col col-4 style="border: black 1px solid;">
+                Amount
+            </ion-col>
+            <ion-col col-4 style="border: black 1px solid;">
+                Total Item Count
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
 </ion-content>

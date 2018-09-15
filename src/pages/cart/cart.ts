@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, MenuController, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController, AlertController, ToastController } from 'ionic-angular';
 import { AddressPage } from '../address/address';
 
 import { GlobalsProvider } from '../../providers/globals/globals';
@@ -20,7 +20,7 @@ export class CartPage {
 
   count:any;
   constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,
-    public globals:GlobalsProvider,public alertCtrl:AlertController) {
+    public globals:GlobalsProvider,public alertCtrl:AlertController,public toastCtrl:ToastController) {
   }
 
   ionViewDidLoad() {
@@ -59,17 +59,22 @@ export class CartPage {
   {
     console.log("Add to cart clicked");
     console.log(this.count);
-    let alert = this.alertCtrl.create({
-      title: 'Added to Cart',
-      message: 'Item is added to card Successfully',
-      buttons:[
-        {
-          text:'Ok',
-          role:'cancel',
-        }
-      ]
-    });
-    alert.present();
+    // let alert = this.alertCtrl.create({
+    //   title: 'Added to Cart',
+    //   message: 'Item is added to card Successfully',
+    //   buttons:[
+    //     {
+    //       text:'Ok',
+    //       role:'cancel',
+    //     }
+    //   ]
+    // });
+    let toast = this.toastCtrl.create({
+      message: 'added to Cart successfully',
+      duration: 3000,
+      position: 'middle'
+    })
+    toast.present();
     this.globals.cartCount=this.globals.cartCount+this.count;
     console.log(this.globals.cartCount);
   }

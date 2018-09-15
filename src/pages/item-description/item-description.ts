@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, ToastController } from 'ionic-angular';
 import { CartPage } from '../cart/cart';
 import { GlobalsProvider } from '../../providers/globals/globals';
 /**
@@ -17,7 +17,8 @@ import { GlobalsProvider } from '../../providers/globals/globals';
 export class ItemDescriptionPage {  
   data:any;
   count:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl:AlertController,public globals:GlobalsProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl:AlertController,
+  public globals:GlobalsProvider,public toastCtrl:ToastController) {
     this.data=this.navParams.get('card');
     console.log(this.data);
     this.count=1;
@@ -31,17 +32,23 @@ export class ItemDescriptionPage {
   {
     console.log("Add to cart clicked");
     console.log(this.count);
-    let alert = this.alertCtrl.create({
-      title: 'Added to Cart',
-      message: 'Item is added to card Successfully',
-      buttons:[
-        {
-          text:'Ok',
-          role:'cancel',
-        }
-      ]
-    });
-    alert.present();
+    // let alert = this.alertCtrl.create({
+    //   title: 'Added to Cart',
+    //   message: 'Item is added to card Successfully',
+    //   buttons:[
+    //     {
+    //       text:'Ok',
+    //       role:'cancel',
+    //     }
+    //   ]
+    // });
+    // alert.present();
+    let toast = this.toastCtrl.create({
+      message: 'added to Cart successfully',
+      duration: 3000,
+      position: 'middle'
+    })
+    toast.present();
     this.globals.cartCount=this.globals.cartCount+this.count;
     console.log(this.globals.cartCount);
   }
