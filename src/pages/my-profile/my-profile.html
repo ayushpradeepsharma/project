@@ -42,10 +42,10 @@
       <ion-input type="tel" [(ngModel)]="user.phoneNumber" formControlName="phoneNumber"></ion-input>
     </ion-item> -->
     <ion-list>
-      <button ion-item>Name</button>
-      <button ion-item>Email</button>
-      <button ion-item>Address</button>
-      <button ion-item>Phone Number</button>
+      <button (click)="clickOnName()" ion-item>Name</button>
+      <button (click)="clickOnEmail()" ion-item>Email</button>
+      <button (click)="clickOnAddress()" ion-item>Address</button>
+      <button (click)="clickOnPhoneNumber()" ion-item>Phone Number</button>
     </ion-list>
 
   </form>

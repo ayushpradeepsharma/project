@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CartPage } from '../cart/cart';
 
+import { GlobalsProvider } from '../../providers/globals/globals';
+
 /**
  * Generated class for the AddressPage page.
  *
@@ -21,11 +23,12 @@ export class AddressPage {
   cash:boolean=false;
   paytm:boolean=false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public globals:GlobalsProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddressPage');
+    console.log(this.globals.cartCount);
   }
 
   clickOnCart()

@@ -17,8 +17,18 @@ import { GlobalsProvider } from '../../providers/globals/globals';
 })
 export class MyOrderPage {
 
+  orders: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,
   public globals:GlobalsProvider) {
+    this.orders=[
+      {date:'01/05/2018',amount:'2000',itemCount:'5'},
+      {date:'22/05/2018',amount:'200',itemCount:'5'},
+      {date:'14/06/2018',amount:'1600',itemCount:'5'},
+      {date:'17/06/2018',amount:'2200',itemCount:'5'},
+      {date:'22/06/2018',amount:'700',itemCount:'5'}
+      
+    ];
   }
 
   ionViewDidLoad() {

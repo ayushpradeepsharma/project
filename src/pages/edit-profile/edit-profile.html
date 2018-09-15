@@ -7,12 +7,43 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>editProfile</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <div *ngIf="nameBoolean">
+      <ion-item >
+          <ion-label stacked>Name</ion-label>
+          <ion-input type="text" [(ngModel)]="name"></ion-input>
+        </ion-item>
+        <button ion-button (click)="clickOnSaveOne()">Save</button>
+  </div>
+  
+  <div *ngIf="emailBoolean">
+      <ion-item >
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <button ion-button (click)="clickOnSaveTwo()">Save</button>
+  </div>
 
+  <div *ngIf="addressBoolean">
+      <ion-item >
+          <ion-label stacked>Address</ion-label>
+          <ion-input type="text" [(ngModel)]="address" ></ion-input>
+        </ion-item>
+        <button ion-button (click)="clickOnSaveThree()">Save</button>
+  </div>
+   
+  <div *ngIf="phoneNumberBoolean">
+      <ion-item >
+          <ion-label stacked>Phone Number</ion-label>
+          <ion-input type="tel" [(ngModel)]="phoneNumber" ></ion-input>
+      </ion-item>
+      <button ion-button (click)="clickOnSaveFour()">Save</button>
+  </div>
+    
 </ion-content>

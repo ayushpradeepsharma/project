@@ -2,7 +2,7 @@
 
   <ion-navbar>
     <ion-buttons start>
-      <button  ion-button style="float:left;"clear (click)="clickOnMenu()">
+      <button  ion-button clear (click)="clickOnMenu()">
           <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
@@ -26,7 +26,7 @@
     <div class="today">  
     <ion-card *ngFor="let card of todays" (click)="clickOnToday(card)">
       <ion-card-content>
-          <img class="pic" src="../../assets/imgs/logo.png"> 
+          <img class="pic" src="../../assets/imgs/paneer.jpg"> 
         <h6><b>Short description</b></h6>
         <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
         <p><b>Price</b></p>
@@ -42,7 +42,7 @@
       <div class="today">  
       <ion-card *ngFor="let card of popular" (click)="clickOnPopular(card)">
         <ion-card-content>
-            <img class="pic" src="../../assets/imgs/logo.png"> 
+            <img class="pic" src="../../assets/imgs/paneer.jpg"> 
           <h6><b>Short description</b></h6>
           <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
           <p><b>Price</b></p>
@@ -58,7 +58,7 @@
         <div class="today">  
         <ion-card *ngFor="let card of allDishes" (click)="clickOnAllDishes(card)">
           <ion-card-content>
-              <img class="pic" src="../../assets/imgs/logo.png"> 
+              <img class="pic" src="../../assets/imgs/paneer.jpg"> 
             <h6><b>Short description</b></h6>
             <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
             <p><b>Price</b></p>

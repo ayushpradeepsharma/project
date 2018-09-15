@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams, MenuController, AlertController, T
 import { AddressPage } from '../address/address';
 
 import { GlobalsProvider } from '../../providers/globals/globals';
+import { HomeOnePage } from '../home-one/home-one';
 
 /**
  * Generated class for the CartPage page.
@@ -58,7 +59,8 @@ export class CartPage {
   clickOnAddMoreItems()
   {
     console.log("Add to cart clicked");
-    console.log(this.count);
+    this.navCtrl.push(HomeOnePage);
+    // console.log(this.count);
     // let alert = this.alertCtrl.create({
     //   title: 'Added to Cart',
     //   message: 'Item is added to card Successfully',
@@ -69,14 +71,14 @@ export class CartPage {
     //     }
     //   ]
     // });
-    let toast = this.toastCtrl.create({
-      message: 'added to Cart successfully',
-      duration: 3000,
-      position: 'middle'
-    })
-    toast.present();
-    this.globals.cartCount=this.globals.cartCount+this.count;
-    console.log(this.globals.cartCount);
+    // let toast = this.toastCtrl.create({
+    //   message: 'added to Cart successfully',
+    //   duration: 3000,
+    //   position: 'middle'
+    // })
+    // toast.present();
+    // this.globals.cartCount=this.globals.cartCount+this.count;
+    // console.log(this.globals.cartCount);
   }
 
 }

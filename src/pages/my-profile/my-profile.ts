@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
+import { EditProfilePage } from '../edit-profile/edit-profile';
 
 /**
  * Generated class for the MyProfilePage page.
@@ -43,4 +44,23 @@ export class MyProfilePage {
     this.menuCtrl.toggle();
   }
 
+  clickOnName()
+  {
+    this.navCtrl.push(EditProfilePage,{itemOne:'name'});
+  }
+
+  clickOnAddress()
+  {
+    this.navCtrl.push(EditProfilePage,{itemTwo:'address'});
+  }
+
+  clickOnPhoneNumber()
+  {
+    this.navCtrl.push(EditProfilePage,{itemThree:'phoneNumber'})
+  }
+
+  clickOnEmail()
+  {
+    this.navCtrl.push(EditProfilePage,{itemFour:'email'});
+  }
 }

@@ -12,6 +12,7 @@ import { RateUsPage } from '../pages/rate-us/rate-us';
 import { ShareUsPage } from '../pages/share-us/share-us';
 import { ContactUsPage } from '../pages/contact-us/contact-us';
 import { LogoutPage } from '../pages/logout/logout';
+import { HomeOnePage } from '../pages/home-one/home-one';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,10 +32,12 @@ export class MyApp {
       { title: 'My Account', component: MyAccountPage },
       { title: 'My Profile', component: MyProfilePage },
       { title: 'My Order', component: MyOrderPage },
+      { title: 'Items', component: HomeOnePage },
       { title: 'Rate Us', component: RateUsPage },
       { title: 'Share Us', component: ShareUsPage },
       { title: 'Contact Us', component: ContactUsPage },
       { title: 'Logout', component: LogoutPage },
+     
       
 
     ];

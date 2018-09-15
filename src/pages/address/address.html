@@ -8,10 +8,11 @@
 
   <ion-navbar>
     <ion-title></ion-title>
-    <ion-buttons>
+    <ion-buttons end>
       <button ion-button style="float:right;" (click)="clickOnCart()">
       <ion-icon name="cart" ></ion-icon>
       </button>
+      <span *ngIf="globals.cartCount!='0'" style="position:absolute;float:right;bottom: 1.7em;"><ion-badge >{{globals.cartCount}}</ion-badge></span>
     </ion-buttons>
   </ion-navbar>
 
@@ -20,10 +21,30 @@
 
 <ion-content padding>
 
-  <ion-item>
-    <ion-label stacked>Address</ion-label>
-    <ion-textarea [(ngModel)]="address"></ion-textarea>
-  </ion-item>
+  <ion-card>
+    <ion-card-header>Delivery Address</ion-card-header>
+    <ion-card-content>
+        <!-- <ion-item>
+            <ion-label stacked>Locality</ion-label>
+            <ion-input style="border-bottom:black 0.5px solid" type="text" [(ngModel)]="locality"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>City</ion-label>
+            <ion-input style="border-bottom:black 0.5px solid" type="text" [(ngModel)]="city"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>State</ion-label>
+            <ion-input style="border-bottom:black 0.5px solid" type="text" [(ngModel)]="state"></ion-input>
+        </ion-item> -->
+
+        <ion-item>
+          <ion-label stacked>Address</ion-label>
+          <ion-textarea [(ngModel)]="address"></ion-textarea>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+  
+
 
   <ion-card>
     <ion-card-header>
