@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,MenuController } from 'ionic-angular';
 
 import { GlobalsProvider } from '../../providers/globals/globals';
+import { CartPage } from '../cart/cart';
 
 /**
  * Generated class for the MyOrderPage page.
@@ -38,6 +39,11 @@ export class MyOrderPage {
   clickOnMenu()
   {
     this.menuCtrl.toggle();
+  }
+
+  clickOnCart()
+  {
+    this.navCtrl.push(CartPage);
   }
 
 }

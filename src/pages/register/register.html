@@ -18,26 +18,26 @@
   <form [formGroup]="registerForm">
 
     <ion-item>
-      <ion-label fixed>NAME</ion-label>
+      <ion-label float>NAME</ion-label>
       <ion-input type="text" [(ngModel)]="user.name" formControlName="name"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>EMAIL</ion-label>
+      <ion-label float>EMAIL</ion-label>
       <ion-input type="email" [(ngModel)]="user.email" formControlName="email"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>PHONE</ion-label>
+      <ion-label float>PHONE</ion-label>
       <ion-input type="tel" [(ngModel)]="user.phone" formControlName="phone"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label fixed>PASSWORD</ion-label>
+      <ion-label float>PASSWORD</ion-label>
       <ion-input type="password" [(ngModel)]="user.password" formControlName="password"></ion-input>
     </ion-item>
 
-    <button class="btnOne" ion-button type="submit" (click)="clickOnRegiser">REGISTER</button>
+    <button class="btnOne" ion-button type="submit" (click)="clickOnRegister()">REGISTER</button>
   </form>
 
 </ion-content>

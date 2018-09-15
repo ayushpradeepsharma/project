@@ -37,4 +37,9 @@ export class RegisterPage {
     })
   }
 
+  clickOnRegister()
+  {
+    console.log(this.registerForm.value);
+  }
+
 }
