@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams,MenuController } from 'ionic-angula
 import { ItemDescriptionPage } from '../item-description/item-description';
 import { CartPage } from '../cart/cart';
 
+import { GlobalsProvider } from '../../providers/globals/globals';
+
 /**
  * Generated class for the HomeOnePage page.
  *
@@ -21,7 +23,7 @@ export class HomeOnePage {
   popular:any=[];
   allDishes:any=[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,public globals:GlobalsProvider) {
   }
 
   ionViewDidLoad() {

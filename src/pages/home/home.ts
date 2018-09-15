@@ -32,7 +32,7 @@ clickOnGoogle()
 clickOnRegister()
 {
   console.log('Register clicked');
-  this.navCtrl.setRoot(RegisterPage);
+  this.navCtrl.push(RegisterPage);
 }
 
 }

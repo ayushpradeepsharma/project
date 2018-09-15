@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController, AlertController } from 'ionic-angular';
 import { AddressPage } from '../address/address';
+
+import { GlobalsProvider } from '../../providers/globals/globals';
 
 /**
  * Generated class for the CartPage page.
@@ -17,7 +19,8 @@ import { AddressPage } from '../address/address';
 export class CartPage {
 
   count:any;
-  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,
+    public globals:GlobalsProvider,public alertCtrl:AlertController) {
   }
 
   ionViewDidLoad() {
@@ -50,6 +53,25 @@ export class CartPage {
   clickOnCheckout()
   {
     this.navCtrl.push(AddressPage);
+  }
+
+  clickOnAddMoreItems()
+  {
+    console.log("Add to cart clicked");
+    console.log(this.count);
+    let alert = this.alertCtrl.create({
+      title: 'Added to Cart',
+      message: 'Item is added to card Successfully',
+      buttons:[
+        {
+          text:'Ok',
+          role:'cancel',
+        }
+      ]
+    });
+    alert.present();
+    this.globals.cartCount=this.globals.cartCount+this.count;
+    console.log(this.globals.cartCount);
   }
 
 }
