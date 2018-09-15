@@ -1,6 +1,17 @@
 // http://ionicframework.com/docs/theming/
 
+.toolbar-title
+{
+    font-size: 1em;
+    margin-top: 2em;
+}
 
+.toolbar ion-title
+{
+    padding-right: 1em;
+    // padding-top: 1.5em;
+    // margin-top: 1.2m;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
