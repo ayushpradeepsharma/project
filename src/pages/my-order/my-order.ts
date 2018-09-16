@@ -23,11 +23,13 @@ export class MyOrderPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,public menuCtrl:MenuController,
   public globals:GlobalsProvider) {
     this.orders=[
-      {date:'01/05/2018',amount:'2000',itemCount:'5'},
-      {date:'22/05/2018',amount:'200',itemCount:'5'},
-      {date:'14/06/2018',amount:'1600',itemCount:'5'},
-      {date:'17/06/2018',amount:'2200',itemCount:'5'},
-      {date:'22/06/2018',amount:'700',itemCount:'5'}
+      {restaurent:'ABC restaurent',place:'Vaishali',date:'30 Aug 2018',order:'One Shahi Paneer and 2 Butter naan',amount:'400'},
+      {restaurent:'Zaika',place:'Vasundra restaurent',date:'12 Aug 2018',order:'One chicken kabaab and 2 Butter naan',amount:'750'},
+      {restaurent:'Punjabi Zaika restaurent',place:'Ghaziabad',date:'23 Aug 2018',order:'One Malai Kofta and 2 Butter naan',amount:'630'},
+      {restaurent:'YOurs restaurent',place:'Vaishali',date:'19 Aug 2018',order:'One Shahi Paneer and 2 Butter naan',amount:'470'},
+      {restaurent:'Dominos restaurent',place:'Gaur Mall',date:'4 Aug 2018',order:'One regular pizza and 2 cold drinks',amount:'490'},
+      {restaurent:'Pizza Hut restaurent',place:'Vaishali',date:'1 Aug 2018',order:'Three medium pan pizza',amount:'800'},
+
       
     ];
   }

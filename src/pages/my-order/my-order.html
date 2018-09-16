@@ -39,29 +39,24 @@
 
 <ion-content padding>
 
-    <ion-grid>
-        <ion-row>
-            <ion-col col-4 style="border: black 1px solid;">
-                Date
-            </ion-col>
-            <ion-col col-4 style="border: black 1px solid;">
-                Amount
-            </ion-col>
-            <ion-col col-4 style="border: black 1px solid;">
-                Total Item Count
-            </ion-col>
-        </ion-row>
-        <ion-row *ngFor="let item of orders">
-            <ion-col col-4 style="border: black 1px solid;">
-                <p>{{item.date}}</p>
-            </ion-col>
-            <ion-col col-4 style="border: black 1px solid;">
-                <p text-center>{{item.amount}}</p>
-            </ion-col>
-            <ion-col col-4 style="border: black 1px solid;">
-                <p text-center>{{item.itemCount}}</p>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+    <ion-list *ngFor="let order of orders" style="border-bottom:1px grey solid;">
+        <ion-grid>
+            <ion-row row-2>
+                <img style="border-radius: 10%;height: 4em;width: 4em;" src="../../assets/imgs/paneer.jpg">
+                <span style="padding-left:0.4em;"><b>{{order.restaurent}}</b><br>
+                ({{order.place}})<br>
+                Order was made on {{order.date}}</span>
+            </ion-row>
+            <ion-row row-10>
+               
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                   {{order.order}}<br>
+                   <b>Total Bill Rs{{order.amount}}</b>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-list>
 
 </ion-content>
