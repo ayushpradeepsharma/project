@@ -19,7 +19,7 @@
           <ion-label stacked>Name</ion-label>
           <ion-input type="text" [(ngModel)]="name"></ion-input>
         </ion-item>
-        <button ion-button (click)="clickOnSaveOne()">Save</button>
+        <button ion-button block style="margin-top:1em;" (click)="clickOnSaveOne()">Save</button>
   </div>
   
   <div *ngIf="emailBoolean">
@@ -27,7 +27,7 @@
           <ion-label stacked>Email</ion-label>
           <ion-input type="email" [(ngModel)]="email"></ion-input>
         </ion-item>
-        <button ion-button (click)="clickOnSaveTwo()">Save</button>
+        <button ion-button block style="margin-top:1em;" (click)="clickOnSaveTwo()">Save</button>
   </div>
 
   <div *ngIf="addressBoolean">
@@ -35,7 +35,7 @@
           <ion-label stacked>Address</ion-label>
           <ion-input type="text" [(ngModel)]="address" ></ion-input>
         </ion-item>
-        <button ion-button (click)="clickOnSaveThree()">Save</button>
+        <button ion-button block style="margin-top:1em;" (click)="clickOnSaveThree()">Save</button>
   </div>
    
   <div *ngIf="phoneNumberBoolean">
@@ -43,7 +43,7 @@
           <ion-label stacked>Phone Number</ion-label>
           <ion-input type="tel" [(ngModel)]="phoneNumber" ></ion-input>
       </ion-item>
-      <button ion-button (click)="clickOnSaveFour()">Save</button>
+      <button ion-button block style="margin-top:1em;" (click)="clickOnSaveFour()">Save</button>
   </div>
     
 </ion-content>

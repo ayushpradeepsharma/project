@@ -10,6 +10,7 @@ page-home-one {
     {
         width: 25em;
         height: 10em;
+        border-radius: 10%
     }
 
     .today
@@ -20,7 +21,11 @@ page-home-one {
         {
             display: table-cell;
             border: solid 1px #cccccc;
-            margin-right: 1em;
+           padding-right: 1em;
+           padding-left: 1em;
+           border-spacing: 2em;
         }
     }
+
+   
 }
