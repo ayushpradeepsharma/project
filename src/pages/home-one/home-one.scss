@@ -10,20 +10,22 @@ page-home-one {
     {
         width: 25em;
         height: 10em;
-        border-radius: 10%
+        border-radius: 10%;
     }
 
     .today
     {
-        width:2000px;
+        width:1250px;
         height: 100%;
+        border-spacing: 1em;
         ion-card
         {
             display: table-cell;
             // border: solid 1px #cccccc;
-           padding-right: 1em;
-           padding-left: 1em;
+        //    padding-right: 1em;
+        //    padding-left: 1em;
            border-spacing: 2em;
+           border-radius: 10%;
         }
     }
 

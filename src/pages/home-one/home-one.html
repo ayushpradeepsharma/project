@@ -39,16 +39,28 @@
 <ion-content padding>
 
   <h6 text-center>Today's Special</h6>
-  
+  <!-- <ion-slides>
+    <ion-slide>
+      <ion-card  class="card "*ngFor="let card of todays" (click)="clickOnToday(card)">
+        <ion-card-content style="padding: 0em;">
+            <img class="pic" src="../../assets/imgs/paneer.jpg"> 
+          <h6><b>Short description</b></h6>
+          <p style="text-align: justify">Many desktop publishing packages and web page </p>
+          <p><b>Price</b></p>
+          <p style="padding-bottom: 0.4em;">4000$</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides> -->
   <ion-scroll scrollX="true" style="width:100%;height: 22em;">
     <div class="today">  
     <ion-card  class="card "*ngFor="let card of todays" (click)="clickOnToday(card)">
       <ion-card-content style="padding: 0em;">
           <img class="pic" src="../../assets/imgs/paneer.jpg"> 
         <h6><b>Short description</b></h6>
-        <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
-        <p><b>Price</b></p>
-        <p style="padding-bottom: 0.4em;">4000$</p>
+        <p style="text-align: justify">Many desktop publishing packages and web page </p>
+        <p style="margin-left:0.4em;"><b>Price</b></p>
+        <p style="padding-bottom: 0.4em;margin-left:0.4em;">4000$</p>
       </ion-card-content>
     </ion-card>
     </div>
@@ -62,9 +74,9 @@
       <ion-card-content style="padding: 0em;">
           <img class="pic" src="../../assets/imgs/paneer.jpg"> 
         <h6><b>Short description</b></h6>
-        <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
-        <p><b>Price</b></p>
-        <p style="padding-bottom: 0.4em;">4000$</p>
+        <p style="text-align: justify">Many desktop publishing packages and web page </p>
+        <p style="margin-left:0.4em;"><b>Price</b></p>
+        <p style="padding-bottom: 0.4em;margin-left:0.4em;">4000$</p>
       </ion-card-content>
     </ion-card>
     </div>
@@ -78,9 +90,9 @@
         <ion-card-content style="padding: 0em;">
             <img class="pic" src="../../assets/imgs/paneer.jpg"> 
           <h6><b>Short description</b></h6>
-          <p style="text-align: justify">Many desktop publishing packages and web page (injected humour and the like).</p>
-          <p><b>Price</b></p>
-          <p style="padding-bottom: 0.4em;">4000$</p>
+          <p style="text-align: justify">Many desktop publishing packages and web page </p>
+          <p style="margin-left:0.4em;"><b>Price</b></p>
+          <p style="padding-bottom: 0.4em;margin-left:0.4em;">4000$</p>
         </ion-card-content>
       </ion-card>
       </div>

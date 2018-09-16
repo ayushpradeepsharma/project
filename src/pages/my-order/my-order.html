@@ -52,14 +52,14 @@
             </ion-col>
         </ion-row>
         <ion-row *ngFor="let item of orders">
-            <ion-col col-4>
-                {{item.date}}
+            <ion-col col-4 style="border: black 1px solid;">
+                <p>{{item.date}}</p>
             </ion-col>
-            <ion-col col-4>
-                {{item.amount}}
+            <ion-col col-4 style="border: black 1px solid;">
+                <p text-center>{{item.amount}}</p>
             </ion-col>
-            <ion-col col-4>
-                {{item.itemCount}}    
+            <ion-col col-4 style="border: black 1px solid;">
+                <p text-center>{{item.itemCount}}</p>
             </ion-col>
         </ion-row>
     </ion-grid>
