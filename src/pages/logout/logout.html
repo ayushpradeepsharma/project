@@ -6,14 +6,23 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-      <ion-buttons start>
+  <ion-toolbar>
+      <!-- <ion-buttons start>
           <button  ion-button style="float:left;"clear (click)="clickOnMenu()">
               <ion-icon name="menu"></ion-icon>
           </button>
       </ion-buttons>
-    <ion-title></ion-title>
-  </ion-navbar>
+    <ion-title></ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1>
+          <button  ion-button style="float:right;" clear small (click)="clickOnMenu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
 
 </ion-header>
 

@@ -1,19 +1,37 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-buttons start>
-      <button  ion-button clear (click)="clickOnMenu()">
+  <ion-toolbar>
+    <!-- <ion-buttons start>
+      <button  ion-button style="float:right;" clear (click)="clickOnMenu()">
           <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <!-- <ion-title>Page</ion-title> -->
+    <ion-title></ion-title>
     <ion-buttons end>
         <button  ion-button style="float:right;" clear (click)="clickOnCart()">
             <ion-icon name="cart"></ion-icon>
         </button>
         <span *ngIf="globals.cartCount!='0'" style="position:absolute;float:right; bottom: 1.7em;"><ion-badge>{{globals.cartCount}}</ion-badge></span>
-    </ion-buttons>
-  </ion-navbar>
+    </ion-buttons> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col col-1>
+          <button  ion-button style="float:right;" clear small (click)="clickOnMenu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col col-10>
+
+        </ion-col>
+        <ion-col col-1>
+          <button  ion-button style="float:right;" clear small (click)="clickOnCart()">
+            <ion-icon name="cart"></ion-icon>
+        </button>
+        <span *ngIf="globals.cartCount!='0'" style="position:absolute;float:right; bottom: 2.15em;right:0.9em;"><ion-badge>{{globals.cartCount}}</ion-badge></span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
 
 </ion-header>
 

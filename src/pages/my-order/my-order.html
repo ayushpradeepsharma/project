@@ -2,7 +2,7 @@
 <ion-header>
 
   <ion-navbar>
-      <ion-buttons start>
+      <!-- <ion-buttons start>
           <button  ion-button style="float:left;"clear (click)="clickOnMenu()">
               <ion-icon name="menu"></ion-icon>
           </button>
@@ -13,7 +13,25 @@
           <ion-icon name="cart"></ion-icon>
       </button>
       <span  *ngIf="globals.cartCount!='0'" style="position:absolute;float:right; bottom: 1.7em;"><ion-badge>{{globals.cartCount}}</ion-badge></span>
-  </ion-buttons>
+  </ion-buttons> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-1>
+        <button  ion-button style="float:right;" clear small (click)="clickOnMenu()">
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      </ion-col>
+      <ion-col col-10>
+
+      </ion-col>
+      <ion-col col-1>
+        <button  ion-button style="float:right;" clear small (click)="clickOnCart()">
+          <ion-icon name="cart"></ion-icon>
+      </button>
+      <span *ngIf="globals.cartCount!='0'" style="position:absolute;float:right; bottom: 2.15em; right:0.9em;"><ion-badge>{{globals.cartCount}}</ion-badge></span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   </ion-navbar>
 
 </ion-header>
