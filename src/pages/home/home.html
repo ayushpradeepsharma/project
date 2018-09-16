@@ -9,17 +9,39 @@
 
 <ion-content padding>
 
-  <ion-avatar>
+  <!-- <ion-avatar>
     <img class="circleImage" src="../../assets/imgs/logo.png">
-  </ion-avatar>
+  </ion-avatar> -->
 
-  <div class="login-Box">
+  <!-- <div class="login-Box">
     <h6 text-center>LOGIN</h6>
-    <button class="btnOne" ion-button color="primary" (click)="clickOnFacebook()">Login with Facebook</button>
-    <button class="btnTwo" ion-button color="danger" (click)="clickOnGoogle()">Login with Google</button>
-  </div>
+    <button class="btnOne" ion-button color="primary" (click)="clickOnFacebook()">
+      <img src="../../assets/imgs/facebook.png">
+    </button>
+    <button class="btnTwo" ion-button color="danger" (click)="clickOnGoogle()">
+      <img src="../../assets//imgs//google.png">
+    </button>
+  </div> -->
 
-  <button ion-button class="btnThree" (click)="clickOnRegister()">REGISTER</button>
+  <h6 text-center style="margin-top:6em;">LOGIN USING</h6>
+  <ion-grid style="margin-top:2em;">
+    <ion-row>
+      <ion-col>
+          <img style="height:6em;width:6em;float:right;" src="../../assets/imgs/facebook.png" (tap)="clickOnFacebook()">
+      </ion-col>
+      <ion-col>
+          <img style="height:6.5em;width:6.5em;" src="../../assets/imgs/google.png" (tap)="clickOnGoogle()">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h6 text-center>OR</h6>
+  
+  
+
+  <button ion-button block  (click)="clickOnRegister()">REGISTER</button>
+  <button ion-button block  (click)="clickOnLogin()">LOGIN</button>
+
 
 
 </ion-content>

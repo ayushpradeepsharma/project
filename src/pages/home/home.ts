@@ -35,4 +35,10 @@ clickOnRegister()
   this.navCtrl.push(RegisterPage);
 }
 
+clickOnLogin()
+{
+  console.log('Login clicked');
+  // this.navCtrl.push(RegisterPage);
+}
+
 }
